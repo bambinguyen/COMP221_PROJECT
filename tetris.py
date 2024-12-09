@@ -5,7 +5,7 @@ import random
 pygame.init()
 
 # Screen dimensions
-WIDTH, HEIGHT = 200, 800
+WIDTH, HEIGHT = 300, 600
 GRID_SIZE = 20
 
 # Colors
@@ -277,7 +277,6 @@ def main():
         if game.game_over:
             # Draw the "Game Over" message
             draw_game_over(screen, WIDTH // 2 - 100, HEIGHT // 2 - 30)  # Draw the "Game Over" message
-            # You can add a "Press any key to restart" message here
             # Check for the KEYDOWN event
             if event.type == pygame.KEYDOWN:
                 # Create a new Tetris object
